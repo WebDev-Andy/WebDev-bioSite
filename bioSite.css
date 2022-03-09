@@ -1,0 +1,467 @@
+/** Color palette, Beige #F2E9C7, Peru #C7782F, Black #2F1B2F, Rosy Brown #CBB7A5, Old Rose #8E3645 **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+html, body {
+    font-size: 18px;
+    background-color: #2F1B2F;
+}
+
+.main {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+header {
+    color: #F2E9C7;
+    background-color: #2F1B2F;
+    padding-bottom: 0%;
+    margin: 0; 
+}
+
+/**********************/
+/** Index Page Image **/
+#indexBtn {
+    background-color: #2F1B2F;
+    opacity: 93.5%;
+    margin-left: 0%;
+    width: 100%;
+    height: auto;
+    border: none;
+    display: block;
+    float: left;
+    box-shadow: 0px 9px 9px 0px;
+}
+
+#buttonBg {
+    float: left;
+    opacity: 90%;
+    background-position: right;
+    width: 40%;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: block;
+    border: none;
+    height: auto;
+    background-color: #2F1B2F;
+}
+
+#buttonBg:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+}
+/** End Index Image **/
+/*********************/
+
+
+/*******************/
+/* Hobby Page Text */
+#hobbyText {
+    margin-left: 1.75%;
+    text-align: center;
+    font-weight: normal;
+}
+/** End Hobby Text **/
+/********************/
+
+
+/***************/
+/* Website Div */
+#websites {
+    width: fit-content;
+    height: auto;
+    margin: 25px;
+    padding: 10px;
+    float:  right;
+    border: solid 2px #F2E9C7;
+    box-shadow: 0 8px 8px 0;
+}
+
+#websites p {
+    text-align: center;
+    padding: 5%;
+}
+
+#websites:hover {
+    box-shadow: 0 13px 13px 0;
+}
+
+#websites a {
+    color: #2F1B2F;
+    background-color: #F2E9C7;
+    border: black solid 1px;
+    border-radius: 5%;
+    margin-left: 12px;
+    padding: 6px;
+    font-size: medium;
+    text-decoration: none;
+    text-align: left;
+}
+
+#links:hover {
+    color: #F2E9C7;
+    background-color: #8E3645;
+    animation: bounce .5s;
+}
+
+#links:active {
+    background:linear-gradient(-60deg, #F2E9C7 30%, #C7782F 80%);
+    color: #000000;
+}
+
+/*******************/
+/** Bounce Effect **/
+@keyframes bounce {
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+    }
+80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    }
+}
+/* End Website Div */
+/*******************/
+
+
+
+/******************/
+/*** About Page ***/
+#mainText {
+    color: #F2E9C7;
+    margin: 15px;
+    font-size: large;
+}
+
+#aboutImg {
+    float: left;
+    opacity: 90%;
+    background-position: right;
+    width: 35%;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: block;
+    border: none;
+    height: auto;
+    background-color: #2F1B2F;
+}
+
+#aboutImg:hover {
+    transform: scale(1.05);
+    opacity: 100%;
+}
+/** End About Page **/
+/********************/
+
+
+
+/************************/
+/****  Hobbies Box  *****/
+#list {
+    color: #F2E9C7;
+    font-family: 'Roboto Mono', monospace;
+    text-align: left;
+    margin-left: 45%;
+    margin-top: 25px;
+    padding: 30px;
+    width: max-content;
+    border: #F2E9C7 solid 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#list li {
+    cursor: pointer;
+}
+
+#list li:hover {
+    color: cornflowerblue;
+    transform: scale(1.1);
+}
+
+#listBtn {
+    background-color: #2F1B2F;
+    color: #F2E9C7;
+    border: none;
+}
+
+#listBtn:hover {
+    animation: bounce 1s;
+}
+
+/*****End Hobbies Box*****/
+/*************************/
+
+
+
+/****************************/
+/****Photo Gallery Styles****/
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    color: #F2E9C7;
+    border-bottom: 3px solid #F2E9C7;
+    padding-bottom: 10px;
+}
+
+.container .heading h3 span {
+    font-weight: 100;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.dream img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#hobPic:hover {
+    box-shadow: 0 20px 50px 0;
+    transform: scale(1.3);
+    border: solid 1px black;
+    animation: bounce .5s;
+}
+/* End Photo Gallery Styles */
+/****************************/
+
+#myBtn {
+    background-color: transparent;
+    color: #F2E9C7;
+    border: #F2E9C7 solid 2px;
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 50%;
+    left: 50%;
+    max-width: 35px;
+    max-height: fit-content;
+    width: 100%;
+    font-size: 12px;      
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#myBtn:hover {
+    background-color: #2F1B2F;
+    text-decoration: none;
+}
+
+#myBtn:active {
+    background-color: red;
+    color: black;
+    text-decoration: none;
+}
+
+/*********************/
+/** Site Navigation **/
+#navBtn {
+    background-color: #2F1B2F;
+    font-family: 'Roboto Mono', monospace;
+    color: #F2E9C7;
+    border-radius: 1px;
+    margin-right: 0;
+    margin-left: 5px;
+    margin-bottom: 1.75%;
+    font-size: large;
+    border: 2px solid #F2E9C7;
+    padding: 15px;
+    text-align: center;
+    max-height: 5%;
+    height: 5%;
+    cursor: pointer;
+}
+
+#navBtn:hover {
+    background-color: #8E3645;
+    font-family: 'Roboto Mono', monospace;
+    color: #F2E9C7;
+    border-radius: 1px;
+    margin-right: 0;
+    margin-left: 5px;
+    font-size: large;
+    padding: 15px;
+    border: 2px solid #F2E9C7;
+    text-align: center;
+    max-height: 5%;
+    height: 5%;
+    box-shadow: 1px 8px 8px 1px black;
+}
+
+#navBtn:active {
+    background:linear-gradient(-60deg, #F2E9C7 30%, #C7782F 80%);
+    color: #000000;
+}
+/** End Site Navigation **/
+/************************/
+
+
+/***********************/
+/*** Color Changers ***/
+.headerWords {
+    text-align: left;
+    margin-left: 1.75%;
+}
+
+#one {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#one:hover {
+    color: darkmagenta;
+    cursor: grab;
+}
+
+#two {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#two:hover {
+    color: #C7782F;
+    cursor: grab;
+}
+
+#three {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#three:hover {
+    color: aquamarine;
+    cursor: grab;
+}
+
+#four {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#four:hover {
+    color: #C7782F;
+    cursor: grab;
+}
+
+#five {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#five:hover {
+    color: darkmagenta;
+    cursor: grab;
+}
+
+#six {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#six:hover {
+    color: #C7782F;
+    cursor: grab;
+}
+
+#seven {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#seven:hover {
+    color: aquamarine;
+    cursor: grab;
+}
+
+#eight {
+    text-decoration: none;
+    cursor: grab;
+}
+
+#eight:hover {
+    color: #C7782F;
+    cursor: grab;
+}
+/*** End Color Changer ***/
+/************************/
+
+
+/***********/
+/** Texts **/
+H1 {
+    font-weight: 150;
+    font-family: 'Roboto Mono', monospace;
+    color: #F2E9C7;
+    font-size: 1.5em;
+    word-spacing: .25em;
+    text-align: left;
+}
+
+h2 {
+    font-weight: 500;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2.8em;
+    word-spacing: .2em;
+    margin: 0%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+p {
+    font-family: 'Roboto Mono', monospace;
+    color: #F2E9C7;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-left: 1.75%;
+}
+/** End Texts **/
+/***************/
+
+
+
+
